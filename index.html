@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <section class="container">
+        <div class="sidebar" id="sidebar">
+            PILIH PAKET
+            <div class="pilihan-paket">
+                <div>
+                    <label for="hajiCheckbox">
+                        <input type="checkbox" id="hajiCheckbox" value="Haji">
+                        Haji
+                    </label>
+                </div>
+                <div>
+                    <label for="umrahCheckbox">
+                        <input type="checkbox" id="umrahCheckbox" value="Umrah">
+                        Umrah
+                    </label>
+                </div>
+                <div>
+                    <label for="tourCheckbox">
+                        <input type="checkbox" id="tourCheckbox" value="Tour">
+                        Tour
+                    </label>
+                </div>
+                
+                <div id="allMonth"></div>
+                
+            </div>
+              
+                <div class="filter-price">
+                    <label for="minPrice">Harga Minimum:</label>
+                    <input type="number" id="minPrice" value=""> 
+                    <label for="maxPrice">Harga Maksimum:</label>
+                    <input type="number" id="maxPrice" value=""> 
+                    <button id="filterPriceButton">Cari</button>
+                </div>
+        </div>
+    
+        <div class="main" id="main">
+            <div class="card-container" id="card-container"></div>
+        </div>
+        
+    </section>
+
+    <div class="click"></div>
+    <div class="click"></div>
+    <div class="click"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

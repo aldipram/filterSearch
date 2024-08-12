@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'sidebar sidebar main main main main';
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.main {
+    grid-area: main;
+}
+
+.monthContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.pilihBulan {
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.pilihan-paket {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-price {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 1rem;
+}
+
+.filter-price input {
+    font-size: 1rem;
+    padding: 4px;
+}
+
+.filter-price button {
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #ee0000;
+    color: #ffffff;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    display: grid;
+    grid-template-areas: 
+    'img img img img img img'
+    'h2 h2 h2 h2 h2 h2'
+    'jadwal jadwal jadwal jadwal jadwal jadwal'
+    'kuota kuota kuota hari hari hari'
+    'maskapai maskapai maskapai mendarat mendarat mendarat'
+    'bintang bintang bintang bintang bintang bintang'
+    'harga harga harga button button button';
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.card-img {
+    grid-area: img;
+    width: 100%;
+    height: 300px;
+    border-radius: 4rem;
+}
+.card-title {
+    grid-area: h2;
+    width: 90%;
+    background: #ffff00;
+    font-size: 20px;
+    padding: 2rem;
+    border-radius: 2rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+}
+.jadwal-keberangkatan {
+    grid-area: jadwal;
+}
+.kuota-tersedia {
+    grid-area: kuota;
+}
+.jumlah-hari {
+    grid-area: hari;
+}
+.maskapai-name {
+    grid-area: maskapai;
+}
+.hotel-star {
+    grid-area: bintang;
+}
+.mendarat {
+    grid-area: mendarat;
+}
+.harga {
+    grid-area: harga;
+    font-size: 1.2rem;
+}
+.button {
+    grid-area: button;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ee0000;
+    color: white;
+    border: none;
+}
+
+.paketTidakDitemukan {
+    width: 100%;
+    height: 100vh;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
